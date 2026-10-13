@@ -1,0 +1,26 @@
+[package]
+name = "examples2d"
+version = "0.1.0"
+authors = ["Sébastien Crozet <developer@crozet.re>"]
+edition = "2021"
+publish = false
+
+[features]
+default = ["parallel"]
+parallel = ["rapier2d/parallel", "rapier_testbed2d/parallel", "salva2d/parallel"]
+
+[dependencies]
+anyhow = "1"
+nalgebra = "0.35"
+parry2d = "0.30"
+rapier2d = "0.35.1"
+rapier_testbed2d = "0.35.1"
+kiss3d = { version = "0.45", features = ["rt_switcher"] }
+
+[dependencies.salva2d]
+path = "../build/salva2d"
+features = ["rapier", "rapier-testbed", "sampling"]
+
+[[bin]]
+name = "all_examples2"
+path = "./all_examples2.rs"

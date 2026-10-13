@@ -1,0 +1,66 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:                                        |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "1/uniform/functionObjects";
+    object      functionObjectProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+results
+{
+    extrema
+    {
+        scalar
+        {
+            min(mag(U))     0;
+            max(mag(U))     0.7;
+            min(rho)        1.059999999847229;
+            max(rho)        900.0001850765465;
+            min(alpha.oil)  -1.699457409303342e-13;
+            max(alpha.oil)  1.000000205883092;
+        }
+        label
+        {
+            min(mag(U))_cell 0;
+            min(mag(U))_processor 0;
+            max(mag(U))_cell 19;
+            max(mag(U))_processor 0;
+            min(rho)_cell   1417;
+            min(rho)_processor 0;
+            max(rho)_cell   640;
+            max(rho)_processor 0;
+            min(alpha.oil)_cell 1417;
+            min(alpha.oil)_processor 0;
+            max(alpha.oil)_cell 640;
+            max(alpha.oil)_processor 0;
+        }
+        vector
+        {
+            min(mag(U))_position ( 0 0.025 0.03125 );
+            max(mag(U))_position ( 1 0.025 0.03125 );
+            min(rho)_position ( 0.875 0.325 0.28125 );
+            max(rho)_position ( 0.025 0.025 0.15625 );
+            min(alpha.oil)_position ( 0.875 0.325 0.28125 );
+            max(alpha.oil)_position ( 0.025 0.025 0.15625 );
+        }
+    }
+    oilVolume
+    {
+        scalar
+        {
+            volIntegrate(alpha.oil) 0.09499999951735212;
+        }
+    }
+}
+
+
+// ************************************************************************* //

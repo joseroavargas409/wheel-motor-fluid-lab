@@ -1,0 +1,128 @@
+{
+  "maturity": "Simulada, no validada",
+  "geometry": "Closed 3D planar moving-wall benchmark; local gear-face shear approximation, not full reducer or rotor",
+  "dimensions_m": [
+    1,
+    0.8,
+    0.5
+  ],
+  "cells": 2560,
+  "oil_liters": 95,
+  "oil_initial_height_m": 0.19,
+  "wall_velocity_m_s": 0.7,
+  "settle_s": 0.5,
+  "ramp_s": 0.5,
+  "measurement_s": 2,
+  "gas_compressibility": false,
+  "no_foam_no_oem_CAD": true,
+  "probes": [
+    {
+      "id": "C1",
+      "name": "Lejos de pared · 0.10 m",
+      "position": [
+        0.25,
+        0.1,
+        0.25
+      ]
+    },
+    {
+      "id": "C2",
+      "name": "Cerca de pared · 0.10 m",
+      "position": [
+        0.92,
+        0.1,
+        0.25
+      ]
+    },
+    {
+      "id": "C3",
+      "name": "Lejos de pared · 0.22 m",
+      "position": [
+        0.25,
+        0.22,
+        0.25
+      ]
+    },
+    {
+      "id": "C4",
+      "name": "Cerca de pared · 0.22 m",
+      "position": [
+        0.92,
+        0.22,
+        0.25
+      ]
+    },
+    {
+      "id": "C5",
+      "name": "Lejos de pared · 0.30 m",
+      "position": [
+        0.25,
+        0.3,
+        0.25
+      ]
+    },
+    {
+      "id": "C6",
+      "name": "Cerca de pared · 0.30 m",
+      "position": [
+        0.92,
+        0.3,
+        0.25
+      ]
+    },
+    {
+      "id": "C7",
+      "name": "Lejos de pared · 0.40 m",
+      "position": [
+        0.25,
+        0.4,
+        0.25
+      ]
+    },
+    {
+      "id": "C8",
+      "name": "Cerca de pared · 0.40 m",
+      "position": [
+        0.92,
+        0.4,
+        0.25
+      ]
+    },
+    {
+      "id": "C9",
+      "name": "Lejos de pared · 0.55 m",
+      "position": [
+        0.25,
+        0.55,
+        0.25
+      ]
+    },
+    {
+      "id": "C10",
+      "name": "Cerca de pared · 0.55 m",
+      "position": [
+        0.92,
+        0.55,
+        0.25
+      ]
+    },
+    {
+      "id": "C11",
+      "name": "Lejos de pared · 0.70 m",
+      "position": [
+        0.25,
+        0.7,
+        0.25
+      ]
+    },
+    {
+      "id": "C12",
+      "name": "Cerca de pared · 0.70 m",
+      "position": [
+        0.92,
+        0.7,
+        0.25
+      ]
+    }
+  ]
+}

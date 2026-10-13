@@ -1,0 +1,27 @@
+{
+  "tests": [
+    {
+      "name": "Homogeneous coaxial capacitance agrees with closed-form SI value",
+      "pass": true
+    },
+    {
+      "name": "Residual oil film increases dry capacitance and does not change a fully filled electrode",
+      "pass": true
+    },
+    {
+      "name": "Electronics and film retain a transient after oil leaves, then decay",
+      "pass": true
+    },
+    {
+      "name": "A solid sensitive zone is unavailable, never reported as air",
+      "pass": true
+    },
+    {
+      "name": "Per-channel noise and readings are deterministic across sensor-count subsets",
+      "pass": true
+    }
+  ],
+  "passed": 5,
+  "failed": 0,
+  "measured_validation": false
+}

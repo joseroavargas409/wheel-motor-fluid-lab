@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Reproduce the tested closed planar moving-wall reference. OpenFOAM 1912.
+set -eo pipefail
+cd -- "$(dirname -- "$0")"
+if ! command -v interFoam >/dev/null; then
+  source /usr/share/openfoam/etc/bashrc
+fi
+blockMesh > log.blockMesh 2>&1
+checkMesh > log.checkMesh 2>&1
+interFoam > log.interFoam 2>&1
+echo 'Calculated 3 physical seconds: 1 s preparation and 2 s measurement.'

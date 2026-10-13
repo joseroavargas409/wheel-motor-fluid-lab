@@ -1,0 +1,59 @@
+[package]
+name = "salva2d"
+version = "0.10.0"
+authors = ["Sébastien Crozet <developer@crozet.re>"]
+description = "2-dimensional particle-based fluid dynamics in Rust."
+documentation = "https://salva.rs/docs"
+homepage = "https://salva.rs"
+repository = "https://github.com/dimforge/salva"
+readme = "../../README.md"
+categories = [
+    "science",
+    "game-development",
+    "mathematics",
+    "simulation",
+    "wasm",
+]
+keywords = ["physics", "dynamics", "particles", "fluids", "SPH"]
+license = "Apache-2.0"
+edition = "2021"
+
+[badges]
+maintenance = { status = "actively-developed" }
+
+[features]
+default = [ "dim2", "f32" ]
+dim2    = [ ]
+f32 = [ ]
+parallel = [ "rayon" ]
+sampling = [ "rapier" ]
+rapier = [ "parry", "rapier2d" ]
+rapier-testbed = [ "rapier", "rapier_testbed2d", "kiss3d" ]
+parry = [ "parry2d" ]
+
+[lints]
+rust.unexpected_cfgs = { level = "warn", check-cfg = [
+    'cfg(feature, values("dim3", "f64"))',
+] }
+
+[lib]
+name = "salva2d"
+path = "../../src/lib.rs"
+required-features = [ "dim2", "f32" ]
+
+[dependencies]
+approx = "0.5"
+num-traits = "0.2"
+fnv = "1.0"
+itertools = "0.14"
+generational-arena = "0.2"
+rayon = { version = "1.8", optional = true }
+
+nalgebra = { version = "0.35", features = ["convert-glam033"] }
+glamx = { version = "0.3", features = ["nalgebra"] }
+parry2d = { version = "0.30", optional = true }
+rapier2d = { version = "0.35.1", optional = true }
+rapier_testbed2d = { version = "0.35.1", optional = true }
+kiss3d = { version = "0.45", optional = true }
+
+bitflags = "2"

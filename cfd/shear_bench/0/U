@@ -1,0 +1,2 @@
+FoamFile {version 2.0; format ascii; class volVectorField; object U;}
+dimensions [0 1 -1 0 0 0 0]; internalField uniform (0 0 0); boundaryField {housing {type fixedValue; value uniform (0 0 0);} movingFace {type uniformFixedValue; uniformValue table ((0 (0 0 0))(0.5 (0 0 0))(0.75 (0 .35 0))(1 (0 .7 0))); value uniform (0 0 0);}}

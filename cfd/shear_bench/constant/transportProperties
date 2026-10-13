@@ -1,0 +1,2 @@
+FoamFile {version 2.0; format ascii; class dictionary; object transportProperties;}
+phases (oil air); oil {transportModel Newtonian; nu .000264238; rho 900;} air {transportModel Newtonian; nu .000019; rho 1.06;} sigma .030;

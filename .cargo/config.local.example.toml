@@ -1,0 +1,3 @@
+# On Windows use an open GNU/LLVM toolchain; no Visual Studio is required.
+# Cargo build scripts inherit CC/AR; use CARGO_TARGET_X86_64_PC_WINDOWS_GNU_LINKER.
+# Source replacements remain in config.toml and every dependency is vendored.

@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';
+const base=process.env.TEST_URL||'http://127.0.0.1:8848',tests=[];
+async function get(path){const r=await fetch(base+path);assert.equal(r.status,200,path);return r.json();}
+assert.equal((await get('/api/health')).app,'wheel-motor-fluid-lab');const cases=await get('/api/cases');assert.equal(cases.length,6);assert.ok(cases.every(c=>c.ready));tests.push('Health and all six prepared cases');
+for(const backend of ['v4','v41'])for(const oil of [55,95,125]){
+ const full=await get(`/api/result?oil=${oil}&sensors=12&backend=${backend}`);assert.equal(full.lab_backend,backend);assert.equal(full.probes.length,12);for(const count of [2,6,12]){const sub=await get(`/api/result?oil=${oil}&sensors=${count}&backend=${backend}`);assert.equal(sub.probes.length,count);for(let i=0;i<full.times.length;i++)assert.deepEqual(sub.samples[i].sensors,full.samples[i].sensors.slice(0,count));const r=await fetch(base+`/api/csv?oil=${oil}&sensors=${count}&backend=${backend}`),csv=await r.text();assert.equal(r.status,200);assert.equal(csv.trim().split(/\r?\n/).length,full.times.length*count+1);assert.ok(csv.includes('mechanism_time_s'));}
+ const positions=await fetch(base+full.positions_url);assert.equal(Number(positions.headers.get('content-length')),full.summary.particles*12*full.times.length);await positions.arrayBuffer();tests.push(`${backend}/${oil}: channels, CSV and physical binary`);
+}
+for(const query of ['oil=NaN','sensors=1','sensors=2.5','backend=bogus','oil=146','oil=29']){const r=await fetch(base+'/api/result?'+query);assert.equal(r.status,400);}
+for(const body of [{oil_liters:95,sensor_count:6,motor_rpm:900},{oil_liters:'95',sensor_count:6},null]){const r=await fetch(base+'/api/run',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});assert.equal(r.status,400);}
+const blocked=await fetch(base+'/api/run',{method:'POST',headers:{'Content-Type':'application/json','Origin':'https://example.org'},body:JSON.stringify({oil_liters:95,sensor_count:6})});assert.equal(blocked.status,400);tests.push('Invalid inputs, unsupported physics controls and external origin rejected');
+const compare=await get('/api/compare?oil=95');assert.equal(compare.equivalent_ab_test,false);assert.ok(compare.v41.duration_s>compare.v4.duration_s);tests.push('Comparison preserves different windows and models');
+for(const target of ['/','/lab.js','/lab.css','/inspector/assembly-v3.js','/api/research']){const r=await fetch(base+target);assert.equal(r.status,200,target);await r.text();}tests.push('Dashboard, model and documentation served');
+fs.writeFileSync('reports/lab-api-verification.json',JSON.stringify({passed:tests.length,failed:0,tests},null,2));console.log(JSON.stringify({passed:tests.length,failed:0}));

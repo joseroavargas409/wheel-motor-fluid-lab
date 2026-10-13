@@ -1,0 +1,242 @@
+{
+  "passed": 43,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Rigid basis: inverse, distances, vertical and axial alignment",
+      "pass": true
+    },
+    {
+      "name": "Willis identities and actual stage/output rpm",
+      "pass": true
+    },
+    {
+      "name": "Time selection uses existing frames and never wraps the physical window",
+      "pass": true
+    },
+    {
+      "name": "Coaxial capacitance is finite, monotonic and bounded by air/oil endpoints",
+      "pass": true
+    },
+    {
+      "name": "v41 55 L: complete binary, matching engine and accepted controls",
+      "pass": true
+    },
+    {
+      "name": "v41 55 L: all particles finite and contained at every frame",
+      "pass": true
+    },
+    {
+      "name": "v41 55 L: every frame preserves inventory, phase and signal ranges",
+      "pass": true
+    },
+    {
+      "name": "v41 55 L: visible tooth vertices match the solver polygon",
+      "pass": true
+    },
+    {
+      "name": "v41 55 L: orbital motion and rotations use physical rates",
+      "pass": true
+    },
+    {
+      "name": "v41 55 L: particle centers outside rendered metal at sampled frames",
+      "pass": true
+    },
+    {
+      "name": "v41 55 L: virtual sensors reproducible from physical frame 0",
+      "pass": true
+    },
+    {
+      "name": "v41 95 L: complete binary, matching engine and accepted controls",
+      "pass": true
+    },
+    {
+      "name": "v41 95 L: all particles finite and contained at every frame",
+      "pass": true
+    },
+    {
+      "name": "v41 95 L: every frame preserves inventory, phase and signal ranges",
+      "pass": true
+    },
+    {
+      "name": "v41 95 L: visible tooth vertices match the solver polygon",
+      "pass": true
+    },
+    {
+      "name": "v41 95 L: orbital motion and rotations use physical rates",
+      "pass": true
+    },
+    {
+      "name": "v41 95 L: particle centers outside rendered metal at sampled frames",
+      "pass": true
+    },
+    {
+      "name": "v41 95 L: virtual sensors reproducible from physical frame 0",
+      "pass": true
+    },
+    {
+      "name": "v41 125 L: complete binary, matching engine and accepted controls",
+      "pass": true
+    },
+    {
+      "name": "v41 125 L: all particles finite and contained at every frame",
+      "pass": true
+    },
+    {
+      "name": "v41 125 L: every frame preserves inventory, phase and signal ranges",
+      "pass": true
+    },
+    {
+      "name": "v41 125 L: visible tooth vertices match the solver polygon",
+      "pass": true
+    },
+    {
+      "name": "v41 125 L: orbital motion and rotations use physical rates",
+      "pass": true
+    },
+    {
+      "name": "v41 125 L: particle centers outside rendered metal at sampled frames",
+      "pass": true
+    },
+    {
+      "name": "v41 125 L: virtual sensors reproducible from physical frame 0",
+      "pass": true
+    },
+    {
+      "name": "v4 55 L: complete binary, matching engine and accepted controls",
+      "pass": true
+    },
+    {
+      "name": "v4 55 L: all particles finite and contained at every frame",
+      "pass": true
+    },
+    {
+      "name": "v4 55 L: every frame preserves inventory, phase and signal ranges",
+      "pass": true
+    },
+    {
+      "name": "v4 55 L: visible tooth vertices match the solver polygon",
+      "pass": true
+    },
+    {
+      "name": "v4 55 L: orbital motion and rotations use physical rates",
+      "pass": true
+    },
+    {
+      "name": "v4 55 L: particle centers outside rendered metal at sampled frames",
+      "pass": true
+    },
+    {
+      "name": "v4 95 L: complete binary, matching engine and accepted controls",
+      "pass": true
+    },
+    {
+      "name": "v4 95 L: all particles finite and contained at every frame",
+      "pass": true
+    },
+    {
+      "name": "v4 95 L: every frame preserves inventory, phase and signal ranges",
+      "pass": true
+    },
+    {
+      "name": "v4 95 L: visible tooth vertices match the solver polygon",
+      "pass": true
+    },
+    {
+      "name": "v4 95 L: orbital motion and rotations use physical rates",
+      "pass": true
+    },
+    {
+      "name": "v4 95 L: particle centers outside rendered metal at sampled frames",
+      "pass": true
+    },
+    {
+      "name": "v4 125 L: complete binary, matching engine and accepted controls",
+      "pass": true
+    },
+    {
+      "name": "v4 125 L: all particles finite and contained at every frame",
+      "pass": true
+    },
+    {
+      "name": "v4 125 L: every frame preserves inventory, phase and signal ranges",
+      "pass": true
+    },
+    {
+      "name": "v4 125 L: visible tooth vertices match the solver polygon",
+      "pass": true
+    },
+    {
+      "name": "v4 125 L: orbital motion and rotations use physical rates",
+      "pass": true
+    },
+    {
+      "name": "v4 125 L: particle centers outside rendered metal at sampled frames",
+      "pass": true
+    }
+  ],
+  "cases": [
+    {
+      "backend": "v41",
+      "oil_liters": 55,
+      "frames": 1001,
+      "particles": 2098,
+      "mass_kg": 49.5,
+      "positions_sha256": "940fd09fdbef540a7cb3cfea9cdb9c0edd74c0952576e4a288b81f3fc9ec13cb",
+      "result_sha256": "b47ccfca8b796d440a63db2f64f6291c765d1560d7ddd8ce37c0dfc817d357c6",
+      "worst_sampled_metal_overlap": 0
+    },
+    {
+      "backend": "v41",
+      "oil_liters": 95,
+      "frames": 1001,
+      "particles": 3624,
+      "mass_kg": 85.5,
+      "positions_sha256": "3e522637b8686f00ba93599f13fba63c0e57b0210f3c11f02dc53b5000902017",
+      "result_sha256": "2dca9bb53822230b59a77f9fadcf3c386f50278112187e2765f14aad40e038e9",
+      "worst_sampled_metal_overlap": 0
+    },
+    {
+      "backend": "v41",
+      "oil_liters": 125,
+      "frames": 1001,
+      "particles": 4768,
+      "mass_kg": 112.5,
+      "positions_sha256": "0d69660cde2223ec89587c8dd62df0e0b227746a11226e706fda2a6c21270d30",
+      "result_sha256": "846d98a2951c524126b5cd9576072cbc59b5583c954b629aa7b6eca4e07cbf4e",
+      "worst_sampled_metal_overlap": 0
+    },
+    {
+      "backend": "v4",
+      "oil_liters": 55,
+      "frames": 121,
+      "particles": 2098,
+      "mass_kg": 49.5,
+      "positions_sha256": "57aa437ba19fd9bcc47852445260a0127c4ecee070b70b6ae1b016aa189c6531",
+      "result_sha256": "eac66b1d5aa7e4b8a920164edd5adacdd161e79bf74c886fdd2b6ac7a3258676",
+      "worst_sampled_metal_overlap": 0
+    },
+    {
+      "backend": "v4",
+      "oil_liters": 95,
+      "frames": 121,
+      "particles": 3624,
+      "mass_kg": 85.5,
+      "positions_sha256": "e9e9ac0ca49a17745388b3ddf58f5c2bdbf1f00f8e72eef88c62b8841f376824",
+      "result_sha256": "c5669a211f41ff00741f0921a2b89aecdc81f159ad4a8ea1329bfd570050902f",
+      "worst_sampled_metal_overlap": 0
+    },
+    {
+      "backend": "v4",
+      "oil_liters": 125,
+      "frames": 121,
+      "particles": 4768,
+      "mass_kg": 112.5,
+      "positions_sha256": "9b6c9ab5b8022371337bc9c2652335f14262dcaa7fc0eca68a70930dabf25e72",
+      "result_sha256": "654bc7828580f5288e0d410e3697be403c3d53690a7b515c4e38a72f3577814e",
+      "worst_sampled_metal_overlap": 0
+    }
+  ],
+  "scientifically_validated": false,
+  "validation_basis": "Reused upstream fields; new integration, render geometry and observation checks"
+}

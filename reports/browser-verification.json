@@ -1,0 +1,20 @@
+{
+  "browser": "Codex in-app browser / WebGL2",
+  "date": "2026-10-13",
+  "passed": true,
+  "checks": [
+    "Integrated inspector motor, solver reducer, oil surface and sensor plots render without console errors",
+    "Playback advances physical frames; pause preserves a single synchronized frame",
+    "PNG download produces a nonempty image of the assembly and oil",
+    "V4 and V4.1 switch between prepared trajectories",
+    "55 L and 95 L load with matching mass, particles, duration and signals",
+    "Changing from a V4.1 final frame to V4 resets safely to frame zero",
+    "Exact last frames reachable: V4 frame 120 at 2.400 s; V4.1 frame 1000 at 20.000 s",
+    "Adding channels through 12 keeps fixed probes and creates 12 reading rows",
+    "Channel S12 selection updates both plots and live readings",
+    "Reducer particle view and original inspector view render; original inspector hides oil",
+    "V4 sensor note identifies the linear proxy and absent film/solid exclusion"
+  ],
+  "screenshots": ["docs/vista-integrada.png", "docs/vista-integrada.jpg", "docs/reductor-v4-particulas.jpg"],
+  "scientifically_validated": false
+}

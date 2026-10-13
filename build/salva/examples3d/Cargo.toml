@@ -1,0 +1,31 @@
+[package]
+name = "examples3d"
+version = "0.1.0"
+authors = ["Sébastien Crozet <developer@crozet.re>"]
+edition = "2021"
+publish = false
+
+[features]
+default = []
+parallel = ["rapier3d/parallel", "rapier_testbed3d/parallel", "salva3d/parallel"]
+
+[dependencies]
+anyhow = "1"
+num-traits = "0.2"
+nalgebra = "0.35"
+rapier3d = "0.35.1"
+rapier_testbed3d = "0.35.1"
+parry3d = "0.30"
+kiss3d = { version = "0.45", features = ["rt_switcher"] }
+
+[dependencies.salva3d]
+path = "../build/salva3d"
+features = ["rapier", "rapier-testbed", "sampling"]
+
+[[bin]]
+name = "all_examples3"
+path = "./all_examples3.rs"
+
+[[bin]]
+name = "harness_basic3"
+path = "./harness_basic3.rs"

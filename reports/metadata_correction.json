@@ -1,0 +1,6 @@
+{
+  "change": "Replaced unused V4 sensor_noise_std label with actual V4.1 capacitance noise sigma = 0.01 pF",
+  "numerical_signals_changed": false,
+  "particle_trajectories_changed": false,
+  "engine_changed": false
+}

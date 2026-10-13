@@ -1,0 +1,14 @@
+{
+  "revision": 3,
+  "parts": 41,
+  "meshes": 2709,
+  "vertices": 2226131,
+  "triangles": 986988,
+  "ratio": 32.608695652173914,
+  "difference_percent": -0.034654653053600715,
+  "uniform_three_planet_phases": true,
+  "fixed_ring_pitch_velocity": true,
+  "finite_geometry": true,
+  "nominal_axial_radial_clearances": true,
+  "not_oem_validation": true
+}

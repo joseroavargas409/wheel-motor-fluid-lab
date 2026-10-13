@@ -1,0 +1,9 @@
+# Preserve computed trajectories, sensor fields and exact source copies across OSes.
+*.bin binary
+*.wasm binary
+*.png binary
+*.jpg binary
+*.exe binary
+data/** -text
+dashboard/inspector/** -text
+*.json -text

@@ -1,0 +1,52 @@
+{
+  "initialization_study": [
+    {
+      "spacing_mm": 32.0,
+      "time_s": 0.02,
+      "particles": 3624,
+      "kinetic_energy_j": 3.719028,
+      "max_native_speed_m_s": 3.7046256,
+      "max_projection_mm": 0,
+      "solid_penetration_count": 0,
+      "outside_particles": 0,
+      "finite": true
+    },
+    {
+      "spacing_mm": 16.0,
+      "time_s": 0.02,
+      "particles": 28992,
+      "kinetic_energy_j": 3.2552774,
+      "max_native_speed_m_s": 5.080159,
+      "max_projection_mm": 0,
+      "solid_penetration_count": 0,
+      "outside_particles": 0,
+      "finite": true
+    },
+    {
+      "spacing_mm": 8.0,
+      "time_s": 0.02,
+      "particles": 231934,
+      "kinetic_energy_j": 3.443379,
+      "max_native_speed_m_s": 6.4017677,
+      "max_projection_mm": 3.2762045,
+      "solid_penetration_count": 0,
+      "outside_particles": 0,
+      "finite": true
+    }
+  ],
+  "common_time_s": 0.02,
+  "convergence_demonstrated": false,
+  "note": "Initial 20 ms test, not a steady-state refinement study. Each grid starts from a different packed layer distribution; the results cannot prove convergence.",
+  "refined_prepared_trial": {
+    "spacing_mm": 16,
+    "settle_s": 0.5,
+    "ramp_s": 0.5,
+    "measurement_s": 0.1,
+    "max_native_speed_m_s": 22.663595,
+    "max_projection_mm": 15.017756,
+    "accepted": false,
+    "reason": "Projection exceeds 8 mm and native speed exceeds 20 m/s"
+  },
+  "selected_spacing_mm": 32,
+  "selected_reason": "Three complete 20 s cases passed the established numerical controls. Quantitative accuracy remains unvalidated."
+}

@@ -1,0 +1,19 @@
+{
+  "integrated": {
+    "Salva_Rust_WASM": "Tested: three 20 s cases, 11 physical/geometry unit tests, short native/WASM parity",
+    "Node_Three": "Tested: API, CSV, actual browser rendering",
+    "Analytical_coax_sensor": "Tested: 5 sensor checks; not hardware-calibrated",
+    "OpenFOAM_1912_reference": "Tested: closed 3D planar moving-wall oil-air benchmark; 3 s total, 2 s measured, 95 L, numerical gates passed. Not full reducer geometry."
+  },
+  "research": {
+    "OpenFOAM_1912": "Full reducer and annular rotor: rejected for divergence. Cartesian reference accepted numerically, not experimentally validated.",
+    "Elmer": "Researched only; not integrated or run",
+    "SPlisHSPlasH": "Researched; not integrated in V4.1",
+    "External_server": "Not available; portable source/data provided, no cloud deployment tested"
+  },
+  "excluded_downloads": {
+    "Native_OpenFOAM_2506_2606": "Official URLs returned HTML, not executable payloads; not executed",
+    "blueCFD_2024": "Download stalled; partial installer not executed or integrated",
+    "innoextract": "Official zlib-licensed utility downloaded; failed to launch on this Windows environment; not integrated"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-13",
+  "sources": [
+    {
+      "repository": "joseroavargas409/wheel-motor-inspector",
+      "commit": "64bd32e69634f7be45afad43be4bbdbbb5725212"
+    },
+    {
+      "repository": "joseroavargas409/komatsu-oil-sensors-v4",
+      "commit": "675d92473857ad0b6bf6dfae5456993fa4cea17e"
+    },
+    {
+      "repository": "joseroavargas409/komatsu-oil-sensors-v4-1",
+      "commit": "8455afb44dc5156d7fd4e92eb62714397023547e"
+    }
+  ],
+  "files": [
+    {
+      "path": "data/volumes/55/positions.bin",
+      "sha256": "940fd09fdbef540a7cb3cfea9cdb9c0edd74c0952576e4a288b81f3fc9ec13cb",
+      "verified_against_original": true
+    },
+    {
+      "path": "data/volumes/55/result.json",
+      "sha256": "b47ccfca8b796d440a63db2f64f6291c765d1560d7ddd8ce37c0dfc817d357c6",
+      "verified_against_original": true
+    },
+    {
+      "path": "data/volumes/55/summary.json",
+      "sha256": "e928144038be16f589d95b38b2ab9658f0f22b40b0f00b7e323afb7e79792b22",
+      "verified_against_original": true
+    },
+    {
+      "path": "data/volumes/95/positions.bin",
+      "sha256": "3e522637b8686f00ba93599f13fba63c0e57b0210f3c11f02dc53b5000902017",
+      "verified_against_original": true
+    },
+    {
+      "path": "data/volumes/95/result.json",
+      "sha256": "2dca9bb53822230b59a77f9fadcf3c386f50278112187e2765f14aad40e038e9",
+      "verified_against_original": true
+    },
+    {
+      "path": "data/volumes/95/summary.json",
+      "sha256": "4567a326575793675ca15ee16a487da93a2c3e5252b3ed3dd0232dbcba398047",
+      "verified_against_original": true
+    },
+    {
+      "path": "data/volumes/125/positions.bin",
+      "sha256": "0d69660cde2223ec89587c8dd62df0e0b227746a11226e706fda2a6c21270d30",
+      "verified_against_original": true
+    },
+    {
+      "path": "data/volumes/125/result.json",
+      "sha256": "846d98a2951c524126b5cd9576072cbc59b5583c954b629aa7b6eca4e07cbf4e",
+      "verified_against_original": true
+    },
+    {
+      "path": "data/volumes/125/summary.json",
+      "sha256": "2026393050144aee67ca1306d904f628d5ba3cd73ed34c94a352a2f957202d5a",
+      "verified_against_original": true
+    },
+    {
+      "path": "dashboard/oil_engine.wasm",
+      "sha256": "eb9cbe26a67782533183c71939656627eac2394f12f407473bdd0cd3294a5b83",
+      "verified_against_original": true
+    },
+    {
+      "path": "data/v4/volumes/55/positions.bin",
+      "sha256": "57aa437ba19fd9bcc47852445260a0127c4ecee070b70b6ae1b016aa189c6531",
+      "verified_against_original": true
+    },
+    {
+      "path": "data/v4/volumes/55/result.json",
+      "sha256": "eac66b1d5aa7e4b8a920164edd5adacdd161e79bf74c886fdd2b6ac7a3258676",
+      "verified_against_original": true
+    },
+    {
+      "path": "data/v4/volumes/55/summary.json",
+      "sha256": "ebeef506056fbd5f1d98cb8e17e9ddb57eb96a94d2e7d65bbe36e57dfeeee7dd",
+      "verified_against_original": true
+    },
+    {
+      "path": "data/v4/volumes/95/positions.bin",
+      "sha256": "e9e9ac0ca49a17745388b3ddf58f5c2bdbf1f00f8e72eef88c62b8841f376824",
+      "verified_against_original": true
+    },
+    {
+      "path": "data/v4/volumes/95/result.json",
+      "sha256": "c5669a211f41ff00741f0921a2b89aecdc81f159ad4a8ea1329bfd570050902f",
+      "verified_against_original": true
+    },
+    {
+      "path": "data/v4/volumes/95/summary.json",
+      "sha256": "5fa686736ca293cb036d69bc39546238092b1a52778216371d959236493709a8",
+      "verified_against_original": true
+    },
+    {
+      "path": "data/v4/volumes/125/positions.bin",
+      "sha256": "9b6c9ab5b8022371337bc9c2652335f14262dcaa7fc0eca68a70930dabf25e72",
+      "verified_against_original": true
+    },
+    {
+      "path": "data/v4/volumes/125/result.json",
+      "sha256": "654bc7828580f5288e0d410e3697be403c3d53690a7b515c4e38a72f3577814e",
+      "verified_against_original": true
+    },
+    {
+      "path": "data/v4/volumes/125/summary.json",
+      "sha256": "f78ab462dc066f4851f793eabe6eabb5380062a8cff60969d72ac70f2a0e4463",
+      "verified_against_original": true
+    },
+    {
+      "path": "data/v4/oil_engine.wasm",
+      "sha256": "2cdadab876951e49ffadf824f880499a2d6e5ff0f53cbe492312d92584e74549",
+      "verified_against_original": true
+    },
+    {
+      "path": "dashboard/inspector/assembly-v2.js",
+      "sha256": "3d340964979425b80e15faa4576660a9a3ba60ce91399aab705927304f53692a",
+      "verified_against_original": true
+    },
+    {
+      "path": "dashboard/inspector/assembly-v3.js",
+      "sha256": "03c160733e753af8011ce987e70a979aaa18f3470b5a68b94ec51a2f2a97055e",
+      "verified_against_original": true
+    },
+    {
+      "path": "dashboard/inspector/model.js",
+      "sha256": "4f0e439c678aecb84831dd1910291b22f233db90cf68e911645eaad3af280b0a",
+      "verified_against_original": true
+    }
+  ]
+}

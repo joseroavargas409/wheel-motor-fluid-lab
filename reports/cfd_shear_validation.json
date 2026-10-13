@@ -1,0 +1,46 @@
+{
+  "accepted": true,
+  "status": "Banco de cizalla bifásico calculado; simulación sin validación experimental",
+  "backend": "OpenFOAM 1912.200626 interFoam VOF",
+  "geometry": "Closed 3D planar moving-wall benchmark, local gear-face shear approximation; not full reducer or annular rotor",
+  "oil_liters": 95,
+  "cells": 2560,
+  "duration_s": 2.0,
+  "preparation_s": 1,
+  "measurement_start_s": 1,
+  "inventory_initial_liters": 95.0,
+  "max_inventory_error_percent": 4.007368419790605e-06,
+  "raw_alpha_min": -1.588488322e-10,
+  "raw_alpha_max": 1.000005058,
+  "max_speed_m_s": 0.7,
+  "internal_kinetic_energy_j": {
+    "0.5": 9.694595476001481e-14,
+    "1": 0.0019938786451087942,
+    "3": 0.036492232436465544
+  },
+  "numerical_checks": {
+    "measurement_at_least_2_s": true,
+    "initial_oil_95_liters": true,
+    "mass_balance_below_point_one_percent": true,
+    "finite_fields": true,
+    "phase_fraction_bounded": true,
+    "velocity_bounded": true,
+    "mesh_quality_passed": true,
+    "solver_finished": true,
+    "wall_motion_changes_internal_flow": true
+  },
+  "full_reducer_accepted": false,
+  "scientifically_validated": false,
+  "slice_grid": [
+    20,
+    16
+  ],
+  "slice_dimensions_m": [
+    1,
+    0.8
+  ],
+  "slice_description": "Mean of the two central z layers, cell-centered finite-volume field",
+  "sensor_model": "Direct VOF point fractions; analytical ideal capacitance, without electronics/film calibration",
+  "pressure_basis": "Relative solver gauge; not absolute atmospheric pressure",
+  "volume_source_file": "volFieldValue_0.dat"
+}

@@ -1,0 +1,80 @@
+{
+  "oil_liters": 95,
+  "particles": 3624,
+  "mass_kg": 85.5,
+  "duration_s": 20,
+  "frames": 1001,
+  "particle_radius_m": 0.016,
+  "spacing_m": 0.032,
+  "settle_s": 3,
+  "ramp_s": 2,
+  "phase_offset_s": 0.9999999992299041,
+  "engine": "Salva DFSPH · SI viscosity · surface tension · relative moving-wall divergence",
+  "engine_sha256": "eb9cbe26a67782533183c71939656627eac2394f12f407473bdd0cd3294a5b83",
+  "native_sha256": "ea55e87f1df1ca4625e91b287b2ead7c424acd6410201c582218cac4d66268d5",
+  "numerical_checks": {
+    "duration_at_least_20_s": true,
+    "finite": true,
+    "mass_preserved": true,
+    "particles_preserved": true,
+    "contained": true,
+    "solid_free": true,
+    "bounded_projection": true,
+    "bounded_speed": true
+  },
+  "numerically_accepted": true,
+  "maturity": "Simulada – no validada con mediciones",
+  "wall_clock_s": 2361.5671894,
+  "max_projection_m": 0.00081288815,
+  "max_native_speed_m_s": 5.7721033,
+  "final_kinetic_energy_j": 18.411312,
+  "drive": true,
+  "constants": {
+    "version": "4.1",
+    "maturity": "Simulada – no validada",
+    "model": "930E-4SE",
+    "duration_s": 20,
+    "frame_interval_s": 0.02,
+    "settle_s": 3,
+    "ramp_s": 2,
+    "motor_rpm": 300,
+    "modeled_ratio": 32.608695652173914,
+    "published_ratio": 32.62,
+    "temperature_c": 60,
+    "gravity": [
+      0,
+      0,
+      -9.81
+    ],
+    "pitch_deg": 0,
+    "roll_deg": 0,
+    "acceleration_m_s2": 0,
+    "density_kg_m3": 900,
+    "kinematic_viscosity_m2_s": 0.000264238,
+    "particle_radius_m": 0.016,
+    "surface_tension_n_m": 0.03,
+    "wall_wetting_gain_m_s2": 0.3,
+    "pressure_solver": "DFSPH",
+    "sensor_tau_s": 0.08,
+    "sensor_seed": 930,
+    "air_model": "SPH viewer infers gas in fluid space; a separately labelled OpenFOAM oil-air reference is provided",
+    "mechanism": "two serial planetary stages with stationary rings; prescribed constant motor speed",
+    "geometry_origin": "illustrative dimensions and tooth counts; no OEM CAD or calibrated contact model",
+    "stage_teeth": [
+      [
+        18,
+        27,
+        72
+      ],
+      [
+        23,
+        52,
+        127
+      ]
+    ],
+    "numerical_projection_limit_m": 0.008,
+    "sensor_noise_pf": 0.01
+  },
+  "sensor_model": "Coaxial analytical permittivity + unresolved film model + first-order electronics; virtual non-intrusive probes",
+  "air_model": "Inferred from SPH liquid occupancy; no gas momentum in this backend"
+}

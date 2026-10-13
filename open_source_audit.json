@@ -1,0 +1,318 @@
+{
+  "all_integrated_components_open_source": true,
+  "wasm_imports": [],
+  "own_code_license": "MIT",
+  "rust_packages": [
+    {
+      "name": "approx",
+      "version": "0.5.1",
+      "license": "Apache-2.0",
+      "source": "https://github.com/brendanzab/approx",
+      "notices": "licenses/approx-0.5.1/"
+    },
+    {
+      "name": "autocfg",
+      "version": "1.5.1",
+      "license": "Apache-2.0 OR MIT",
+      "source": "https://github.com/cuviper/autocfg",
+      "notices": "licenses/autocfg-1.5.1/"
+    },
+    {
+      "name": "bitflags",
+      "version": "2.13.2",
+      "license": "MIT OR Apache-2.0",
+      "source": "https://github.com/bitflags/bitflags",
+      "notices": "licenses/bitflags-2.13.2/"
+    },
+    {
+      "name": "bytemuck",
+      "version": "1.25.2",
+      "license": "Zlib OR Apache-2.0 OR MIT",
+      "source": "https://github.com/Lokathor/bytemuck",
+      "notices": "licenses/bytemuck-1.25.2/"
+    },
+    {
+      "name": "cfg-if",
+      "version": "1.0.5",
+      "license": "MIT OR Apache-2.0",
+      "source": "https://github.com/rust-lang/cfg-if",
+      "notices": "licenses/cfg-if-1.0.5/"
+    },
+    {
+      "name": "either",
+      "version": "1.19.0",
+      "license": "MIT OR Apache-2.0",
+      "source": "https://github.com/rayon-rs/either",
+      "notices": "licenses/either-1.19.0/"
+    },
+    {
+      "name": "fnv",
+      "version": "1.0.7",
+      "license": "Apache-2.0 / MIT",
+      "source": "https://github.com/servo/rust-fnv",
+      "notices": "licenses/fnv-1.0.7/"
+    },
+    {
+      "name": "generational-arena",
+      "version": "0.2.9",
+      "license": "MPL-2.0",
+      "source": "https://github.com/fitzgen/generational-arena",
+      "notices": "licenses/generational-arena-0.2.9/"
+    },
+    {
+      "name": "glam",
+      "version": "0.30.10",
+      "license": "MIT OR Apache-2.0",
+      "source": "https://github.com/bitshifter/glam-rs",
+      "notices": "licenses/glam-0.30.10/"
+    },
+    {
+      "name": "glam",
+      "version": "0.31.1",
+      "license": "MIT OR Apache-2.0",
+      "source": "https://github.com/bitshifter/glam-rs",
+      "notices": "licenses/glam-0.31.1/"
+    },
+    {
+      "name": "glam",
+      "version": "0.32.1",
+      "license": "MIT OR Apache-2.0",
+      "source": "https://github.com/bitshifter/glam-rs",
+      "notices": "licenses/glam-0.32.1/"
+    },
+    {
+      "name": "glam",
+      "version": "0.33.12",
+      "license": "MIT OR Apache-2.0",
+      "source": "https://github.com/bitshifter/glam-rs",
+      "notices": "licenses/glam-0.33.12/"
+    },
+    {
+      "name": "glamx",
+      "version": "0.3.1",
+      "license": "MIT OR Apache-2.0",
+      "source": "https://github.com/dimforge/glamx",
+      "notices": "licenses/glamx-0.3.1/"
+    },
+    {
+      "name": "itertools",
+      "version": "0.14.0",
+      "license": "MIT OR Apache-2.0",
+      "source": "https://github.com/rust-itertools/itertools",
+      "notices": "licenses/itertools-0.14.0/"
+    },
+    {
+      "name": "libm",
+      "version": "0.2.16",
+      "license": "MIT",
+      "source": "https://github.com/rust-lang/compiler-builtins",
+      "notices": "licenses/libm-0.2.16/"
+    },
+    {
+      "name": "matrixmultiply",
+      "version": "0.3.11",
+      "license": "MIT/Apache-2.0",
+      "source": "https://github.com/bluss/matrixmultiply/",
+      "notices": "licenses/matrixmultiply-0.3.11/"
+    },
+    {
+      "name": "nalgebra",
+      "version": "0.35.0",
+      "license": "Apache-2.0",
+      "source": "https://github.com/dimforge/nalgebra",
+      "notices": "licenses/nalgebra-0.35.0/"
+    },
+    {
+      "name": "nalgebra-macros",
+      "version": "0.3.0",
+      "license": "Apache-2.0",
+      "source": "https://github.com/dimforge/nalgebra",
+      "notices": "licenses/nalgebra-macros-0.3.0/"
+    },
+    {
+      "name": "num-bigint",
+      "version": "0.4.8",
+      "license": "MIT OR Apache-2.0",
+      "source": "https://github.com/rust-num/num-bigint",
+      "notices": "licenses/num-bigint-0.4.8/"
+    },
+    {
+      "name": "num-complex",
+      "version": "0.4.6",
+      "license": "MIT OR Apache-2.0",
+      "source": "https://github.com/rust-num/num-complex",
+      "notices": "licenses/num-complex-0.4.6/"
+    },
+    {
+      "name": "num-integer",
+      "version": "0.1.47",
+      "license": "MIT OR Apache-2.0",
+      "source": "https://github.com/rust-num/num-integer",
+      "notices": "licenses/num-integer-0.1.47/"
+    },
+    {
+      "name": "num-rational",
+      "version": "0.4.2",
+      "license": "MIT OR Apache-2.0",
+      "source": "https://github.com/rust-num/num-rational",
+      "notices": "licenses/num-rational-0.4.2/"
+    },
+    {
+      "name": "num-traits",
+      "version": "0.2.19",
+      "license": "MIT OR Apache-2.0",
+      "source": "https://github.com/rust-num/num-traits",
+      "notices": "licenses/num-traits-0.2.19/"
+    },
+    {
+      "name": "oa2is_oil_engine",
+      "version": "0.4.1",
+      "license": "MIT",
+      "source": "local project",
+      "notices": "LICENSE"
+    },
+    {
+      "name": "proc-macro2",
+      "version": "1.0.107",
+      "license": "MIT OR Apache-2.0",
+      "source": "https://github.com/dtolnay/proc-macro2",
+      "notices": "licenses/proc-macro2-1.0.107/"
+    },
+    {
+      "name": "quote",
+      "version": "1.0.47",
+      "license": "MIT OR Apache-2.0",
+      "source": "https://github.com/dtolnay/quote",
+      "notices": "licenses/quote-1.0.47/"
+    },
+    {
+      "name": "rawpointer",
+      "version": "0.2.1",
+      "license": "MIT/Apache-2.0",
+      "source": "https://github.com/bluss/rawpointer/",
+      "notices": "licenses/rawpointer-0.2.1/"
+    },
+    {
+      "name": "safe_arch",
+      "version": "1.2.0",
+      "license": "Zlib OR Apache-2.0 OR MIT",
+      "source": "https://github.com/Lokathor/safe_arch",
+      "notices": "licenses/safe_arch-1.2.0/"
+    },
+    {
+      "name": "salva3d",
+      "version": "0.10.0",
+      "license": "Apache-2.0",
+      "source": "https://github.com/dimforge/salva",
+      "notices": "licenses/salva3d-0.10.0/"
+    },
+    {
+      "name": "simba",
+      "version": "0.10.2",
+      "license": "Apache-2.0",
+      "source": "https://github.com/dimforge/simba",
+      "notices": "licenses/simba-0.10.2/"
+    },
+    {
+      "name": "syn",
+      "version": "2.0.119",
+      "license": "MIT OR Apache-2.0",
+      "source": "https://github.com/dtolnay/syn",
+      "notices": "licenses/syn-2.0.119/"
+    },
+    {
+      "name": "typenum",
+      "version": "1.20.1",
+      "license": "MIT OR Apache-2.0",
+      "source": "https://github.com/paholg/typenum",
+      "notices": "licenses/typenum-1.20.1/"
+    },
+    {
+      "name": "unicode-ident",
+      "version": "1.0.27",
+      "license": "(MIT OR Apache-2.0) AND Unicode-3.0",
+      "source": "https://github.com/dtolnay/unicode-ident",
+      "notices": "licenses/unicode-ident-1.0.27/"
+    },
+    {
+      "name": "wide",
+      "version": "1.7.1",
+      "license": "Zlib OR Apache-2.0 OR MIT",
+      "source": "https://github.com/Lokathor/wide",
+      "notices": "licenses/wide-1.7.1/"
+    },
+    {
+      "name": "rayon",
+      "version": "1.11.0",
+      "license": "MIT OR Apache-2.0",
+      "source": "https://github.com/rayon-rs/rayon",
+      "notices": "licenses/rayon-1.11.0"
+    },
+    {
+      "name": "rayon-core",
+      "version": "1.13.0",
+      "license": "MIT OR Apache-2.0",
+      "source": "https://github.com/rayon-rs/rayon",
+      "notices": "licenses/rayon-core-1.13.0"
+    },
+    {
+      "name": "crossbeam-deque",
+      "version": "0.8.6",
+      "license": "MIT OR Apache-2.0",
+      "source": "https://github.com/crossbeam-rs/crossbeam",
+      "notices": "licenses/crossbeam-deque-0.8.6"
+    },
+    {
+      "name": "crossbeam-epoch",
+      "version": "0.9.18",
+      "license": "MIT OR Apache-2.0",
+      "source": "https://github.com/crossbeam-rs/crossbeam",
+      "notices": "licenses/crossbeam-epoch-0.9.18"
+    },
+    {
+      "name": "crossbeam-utils",
+      "version": "0.8.21",
+      "license": "MIT OR Apache-2.0",
+      "source": "https://github.com/crossbeam-rs/crossbeam",
+      "notices": "licenses/crossbeam-utils-0.8.21"
+    }
+  ],
+  "frontend": [
+    {
+      "name": "Three.js",
+      "version": "r180",
+      "license": "MIT"
+    },
+    {
+      "name": "Noto Sans",
+      "license": "OFL-1.1"
+    }
+  ],
+  "runtime": {
+    "name": "Node.js",
+    "version": "v24.19.0",
+    "license": "MIT and bundled open-source dependency notices"
+  },
+  "scope": "Integrated simulation and dashboard; host OS, browser and optional investigation downloads are outside the release",
+  "version": "4.1",
+  "test_environment": {
+    "OpenFOAM": "1912.200626-1+b1; GPL-3+; Debian main, separate Linux test environment",
+    "QEMU": "11.1.0; GPL-2.0 and bundled open dependency notices; local test VM only",
+    "Python": "PSF; standard-library research and packaging utilities; not required for dashboard",
+    "Elmer": "Researched only, not integrated or tested"
+  },
+  "salva_modified": true,
+  "modifications": [
+    "DFSPH wall-relative divergence",
+    "Rigid self-volume denominator caching with current cross-body normalization",
+    "Skip invariant self-boundary contact pairs; preserve cross-boundary contacts"
+  ],
+  "release_exclusions": [
+    "Private SSH keys and VM disk images",
+    "Downloads and investigation tool binaries",
+    "7-Zip bundle and partial blueCFD installer",
+    "Failed raw experiments and historical baseline data"
+  ],
+  "tested_node_version": "24.18.0",
+  "cfd_case_license": "GPL-3.0-or-later; cfd/shear_bench/LICENSE"
+}

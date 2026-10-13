@@ -1,0 +1,14 @@
+{
+  "name": "wheel-motor-fluid-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "GDY106 reference assembly with synchronized v4/v4.1 SPH oil and virtual sensing",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node tests/verify.mjs",
+    "test:api": "node tests/api.mjs",
+    "calculate": "node run_case.mjs"
+  }
+}

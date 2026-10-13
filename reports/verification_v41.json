@@ -1,0 +1,145 @@
+{
+  "passed": 26,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Autonomous WebAssembly module",
+      "pass": true
+    },
+    {
+      "name": "55 L: physical duration, engine identity, file completeness and acceptance",
+      "pass": true
+    },
+    {
+      "name": "55 L: sensor values, exact 50 Hz and synchronized mechanism phase",
+      "pass": true
+    },
+    {
+      "name": "95 L: physical duration, engine identity, file completeness and acceptance",
+      "pass": true
+    },
+    {
+      "name": "95 L: sensor values, exact 50 Hz and synchronized mechanism phase",
+      "pass": true
+    },
+    {
+      "name": "125 L: physical duration, engine identity, file completeness and acceptance",
+      "pass": true
+    },
+    {
+      "name": "125 L: sensor values, exact 50 Hz and synchronized mechanism phase",
+      "pass": true
+    },
+    {
+      "name": "Moving mechanism changes computed trajectories and fluid energy",
+      "pass": true
+    },
+    {
+      "name": "Native and WASM short-run trajectories agree within 0.1 mm RMS",
+      "pass": true
+    },
+    {
+      "name": "All baseline trajectories contain actual motion",
+      "pass": true
+    },
+    {
+      "name": "API and CSV 55 L / 2 sensors: shared channels identical",
+      "pass": true
+    },
+    {
+      "name": "API and CSV 55 L / 4 sensors: shared channels identical",
+      "pass": true
+    },
+    {
+      "name": "API and CSV 55 L / 6 sensors: shared channels identical",
+      "pass": true
+    },
+    {
+      "name": "API and CSV 55 L / 8 sensors: shared channels identical",
+      "pass": true
+    },
+    {
+      "name": "API and CSV 55 L / 12 sensors: shared channels identical",
+      "pass": true
+    },
+    {
+      "name": "API and CSV 95 L / 2 sensors: shared channels identical",
+      "pass": true
+    },
+    {
+      "name": "API and CSV 95 L / 4 sensors: shared channels identical",
+      "pass": true
+    },
+    {
+      "name": "API and CSV 95 L / 6 sensors: shared channels identical",
+      "pass": true
+    },
+    {
+      "name": "API and CSV 95 L / 8 sensors: shared channels identical",
+      "pass": true
+    },
+    {
+      "name": "API and CSV 95 L / 12 sensors: shared channels identical",
+      "pass": true
+    },
+    {
+      "name": "API and CSV 125 L / 2 sensors: shared channels identical",
+      "pass": true
+    },
+    {
+      "name": "API and CSV 125 L / 4 sensors: shared channels identical",
+      "pass": true
+    },
+    {
+      "name": "API and CSV 125 L / 6 sensors: shared channels identical",
+      "pass": true
+    },
+    {
+      "name": "API and CSV 125 L / 8 sensors: shared channels identical",
+      "pass": true
+    },
+    {
+      "name": "API and CSV 125 L / 12 sensors: shared channels identical",
+      "pass": true
+    },
+    {
+      "name": "API permits only oil inventory and sensor count",
+      "pass": true
+    }
+  ],
+  "physical_cases": [
+    {
+      "oil_liters": 55,
+      "particles": 2098,
+      "mass_kg": 49.5,
+      "duration_s": 20,
+      "max_projection_m": 0.00055639446,
+      "max_native_speed_m_s": 6.2060823
+    },
+    {
+      "oil_liters": 95,
+      "particles": 3624,
+      "mass_kg": 85.5,
+      "duration_s": 20,
+      "max_projection_m": 0.00081288815,
+      "max_native_speed_m_s": 5.7721033
+    },
+    {
+      "oil_liters": 125,
+      "particles": 4768,
+      "mass_kg": 112.5,
+      "duration_s": 20,
+      "max_projection_m": 0.00097352266,
+      "max_native_speed_m_s": 6.127435
+    }
+  ],
+  "coupling": {
+    "time_s": 0.1,
+    "position_rms_m": 0.02308650184819329,
+    "moving_energy_j": 11.887647,
+    "stopped_energy_j": 8.687865,
+    "comparison": "Same fluid, gravity, geometry and solver; prescribed wall motion only changes"
+  },
+  "native_wasm_parity_rms_m": 1.5328343748349062e-7,
+  "scientifically_validated": false
+}

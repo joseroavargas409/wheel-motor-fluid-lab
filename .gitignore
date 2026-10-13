@@ -1,0 +1,12 @@
+/jobs/
+/runtime/
+/work/
+/data/volumes/*/raw/
+/engine/target/
+*.log
+.env
+.env.*
+*.pem
+id_ed25519*
+__pycache__/
+node_modules/

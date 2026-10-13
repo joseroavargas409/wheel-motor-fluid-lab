@@ -1,0 +1,68 @@
+{
+  "oil_liters": 95,
+  "particles": 3624,
+  "mass_kg": 85.5,
+  "duration_s": 2.40000844,
+  "frames": 121,
+  "engine": "Salva 0.10.0 · DFSPH · custom SI laminar viscosity",
+  "engine_sha256": "2cdadab876951e49ffadf824f880499a2d6e5ff0f53cbe492312d92584e74549",
+  "numerical_checks": {
+    "duration_at_least_2_s": true,
+    "finite": true,
+    "mass_preserved": true,
+    "particles_preserved": true,
+    "contained": true,
+    "solid_free": true,
+    "bounded_projection": true,
+    "bounded_speed": true,
+    "autonomous_wasm": true
+  },
+  "numerically_accepted": true,
+  "wall_clock_s": 372.6278772,
+  "max_projection_m": 0.00234093,
+  "max_native_speed_m_s": 8.12701416,
+  "final_kinetic_energy_j": 20.03384399,
+  "initial_level_mm": 368.00003000000004,
+  "fluid_particle_order": "stable indices; Salva z-sort disabled in pinned upstream revision",
+  "drive": true,
+  "constants": {
+    "model": "930E-4SE",
+    "duration_s": 2.4,
+    "frame_interval_s": 0.02,
+    "motor_rpm": 300,
+    "modeled_ratio": 32.608695652173914,
+    "published_ratio": 32.62,
+    "temperature_c": 60,
+    "gravity": [
+      0,
+      0,
+      -9.81
+    ],
+    "pitch_deg": 0,
+    "roll_deg": 0,
+    "acceleration_m_s2": 0,
+    "density_kg_m3": 900,
+    "kinematic_viscosity_m2_s": 0.000264238,
+    "particle_radius_m": 0.016,
+    "pressure_solver": "DFSPH",
+    "sensor_tau_s": 0.08,
+    "sensor_noise_std": 0.002,
+    "sensor_seed": 930,
+    "air_model": "unoccupied space inferred; gas is not solved",
+    "mechanism": "two serial planetary stages with stationary rings; prescribed constant motor speed",
+    "geometry_origin": "illustrative dimensions and tooth counts; no OEM CAD or calibrated contact model",
+    "stage_teeth": [
+      [
+        18,
+        27,
+        72
+      ],
+      [
+        23,
+        52,
+        127
+      ]
+    ],
+    "numerical_projection_limit_m": 0.008
+  }
+}
