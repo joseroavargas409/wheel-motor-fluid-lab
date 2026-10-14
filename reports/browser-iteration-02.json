@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-14",
+  "version": "1.1.0",
+  "passed": true,
+  "checks": [
+    "Updated housing cut renders together with the calculated oil surface",
+    "Transparent, cutaway and solid-housing presentations render correctly",
+    "High-stage planet readout: -100 rpm own rotation and +60 rpm orbit",
+    "One physical 20 ms frame changes the planet orientation from 120 to 108 degrees",
+    "Fixed high-stage ring remains at 0 rpm own rotation, 0 rpm orbit and 0 degrees orientation",
+    "Output carrier readout: 9.20 rpm own rotation, zero translational orbit",
+    "Switching presentation, camera focus and liquid style preserves all displayed readings",
+    "V4 with 125 L loads 112.5 kg, 2.4 s and the same output speed",
+    "Original-inspector view hides the liquid presentation control; returning restores integrated oil",
+    "V4.1 with 95 L restored to the integrated cutaway with 6 probes and a smooth physical oil surface",
+    "PNG download succeeds"
+  ],
+  "fluid_data_modified": false,
+  "screenshots": ["docs/iteration-02-dashboard.jpg", "docs/iteration-02.png"]
+}

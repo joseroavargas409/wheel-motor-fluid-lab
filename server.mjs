@@ -12,7 +12,7 @@ function file(res,target,type){if(!fs.existsSync(target)||!fs.statSync(target).i
 function worker(job){if(ready(job.oil_liters,'v41')){job.state='done';return;}job.state='running';job.started=Date.now();const dir=directory(job.oil_liters);fs.mkdirSync(dir,{recursive:true});const fd=fs.openSync(path.join(dir,'run.log'),'w'),child=spawn(process.execPath,[path.join(ROOT,'run_case.mjs'),String(job.oil_liters)],{cwd:ROOT,stdio:['ignore',fd,fd],windowsHide:true});let closed=false;const close=()=>{if(!closed){closed=true;fs.closeSync(fd);}};child.on('error',e=>{close();job.state='failed';job.error=e.message;});child.on('exit',code=>{close();job.finished=Date.now();job.state=code===0&&ready(job.oil_liters,'v41')?'done':'failed';if(job.state==='failed')job.error='El cálculo no cumplió los controles numéricos; revise run.log.';});}
 const server=http.createServer(async(req,res)=>{try{const url=new URL(req.url,`http://${HOST}:${PORT}`),pathname=url.pathname;
  if(req.method==='GET'){
-  if(pathname==='/api/health')return json(res,{app:'wheel-motor-fluid-lab',version:'1.0.0'});
+  if(pathname==='/api/health')return json(res,{app:'wheel-motor-fluid-lab',version:'1.1.0'});
   if(pathname==='/api/cases')return json(res,['v41','v4'].flatMap(backend=>[55,95,125].map(oil_liters=>({backend,oil_liters,ready:ready(oil_liters,backend)}))));
   if(pathname==='/api/result'){const c=config(url);return json(res,data(c.oil,c.count,c.backend));}
   if(pathname==='/api/positions'){const c=config(url);if(!ready(c.oil,c.backend))throw new Error('Caso no disponible.');return file(res,path.join(directory(c.oil,c.backend),'positions.bin'),'application/octet-stream');}

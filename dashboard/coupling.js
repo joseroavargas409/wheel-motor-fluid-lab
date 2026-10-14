@@ -25,3 +25,18 @@ export function bodyVertices(b) {
   return {vertices,indices};
 }
 export const BODY_NAMES=['Solar','Satélite','Corona fija','Portaplanetas','Acoplamiento'];
+export const CAVITY={radius:.501,halfLength:.451};
+// Keep exterior hub/support geometry in any axial position, but never add inspector
+// solids to the volume in which the existing oil trajectories were calculated.
+export function insideCalculatedCavity([x,y,z]) {
+  return x*x+z*z<CAVITY.radius*CAVITY.radius&&Math.abs(y)<CAVITY.halfLength;
+}
+export function bodyMotion(b,time) {
+  const rotationRpm=300*b.speed_factor,orbitRpm=300*b.orbit_factor;
+  const angle=((bodyPose(b,time).angle*180/Math.PI)%360+360)%360;
+  return {rotationRpm,orbitRpm,relativeRpm:rotationRpm-orbitRpm,angle,fixed:Math.abs(rotationRpm)<1e-9&&Math.abs(orbitRpm)<1e-9};
+}
+export function transmission(geometry,time) {
+  const find=(stage,role)=>geometry.find(b=>b.stage===stage&&b.role===role);
+  return {input:bodyMotion(find(0,0),time),intermediate:bodyMotion(find(0,3),time),output:bodyMotion(find(1,3),time)};
+}

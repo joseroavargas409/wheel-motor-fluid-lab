@@ -2,7 +2,9 @@
 
 Integra el **modelo detallado del Wheel Motor Inspector** con los campos de aceite y las sondas de **V4 y V4.1**. Base GDY106; GDY108 se conserva como referencia documental, sin atribuirle cotas desconocidas.
 
-![Vista integrada](docs/vista-integrada.png)
+**Iteración 02 · v1.1:** cubo y soporte recuperados a lo largo del reductor, corte de carcasa, distinción de alta/baja y lectura de giro propio/órbita/orientación por componente. Los seis campos de aceite y todas sus señales se conservan exactamente. [Cambios y comprobaciones](docs/ITERACION_MECANISMO_02.md).
+
+![Mecanismo con aceite · iteración 02](docs/iteration-02.png)
 
 ## Abrir
 
@@ -22,6 +24,7 @@ Abrir **http://127.0.0.1:8848/**. En Windows también se puede ejecutar `INICIAR
 - Tiempo único por cuadro: partículas, piezas y señales utilizan el mismo instante físico y la fase guardada. Se evita interpolar partículas entre dos cuadros para no dibujarlas atravesando el metal.
 - Sondas V4.1: ocupación con exclusión de metal, capacitancia coaxial, película auxiliar, respuesta de 80 ms y ruido reproducible.
 - Exploración: conjunto integrado, reductor, inspector original completo; superficie suave o partículas; canal destacado, series temporales, CSV y captura PNG.
+- Inspección del mecanismo: corte, transparencia o exterior sólido; solares, satélites y portadores seleccionables; cubo exterior a 9,2 rpm y coronas fijas; velocidades y orientación sincronizadas.
 - Comparación V4/V4.1 con sus ventanas y modelos de sonda explícitos. No se presenta como ensayo A/B equivalente.
 
 ## Fidelidad y límites

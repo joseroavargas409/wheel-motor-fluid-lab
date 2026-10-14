@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-14",
+  "passed": 7,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "Housing clip retains the output hub along the whole oil chamber",
+      "pass": true
+    },
+    {
+      "name": "No saved liquid position is treated as visible inspector context",
+      "pass": true
+    },
+    {
+      "name": "Coronas remain fixed, carriers track orbital centers, and planets counter-rotate",
+      "pass": true
+    },
+    {
+      "name": "Transmission readout matches actual reducer bodies at start and end",
+      "pass": true
+    },
+    {
+      "name": "Orientation gauge follows the actual physical angle, including reverse spin",
+      "pass": true
+    },
+    {
+      "name": "Context shader uses world coordinates, cavity bounds and a separate housing cut",
+      "pass": true
+    },
+    {
+      "name": "All six computed fields, readings and engine binaries remain byte-identical",
+      "pass": true
+    }
+  ],
+  "fluid_recalculated": false,
+  "fluid_and_sensor_data_preserved": true
+}
